@@ -9,14 +9,6 @@ namespace PROG32356_assignment1
         /// </summary>       
         static void Main()
         {
-
-
-            //double number1 = getNumber("first");
-            //char operation = getOperation();
-            //double number2 = getNumber("second");
-
-            ////TODO: I guess we now just need to find the right condition and then print the result.
-
             //printGoodByeMessage();
 
             //Allow user to make operations recursively
@@ -107,64 +99,5 @@ namespace PROG32356_assignment1
 
             return operation;
         }
-
-
-        //static char getOperation() {
-        //    char operation = '\0';
-        //    bool validEntry = false;
-        //    do {
-        //        try {
-        //            Console.Write("Please enter the operation\na - addition\ns - substraction\n" +
-        //                "d - division \nm - multiplication\nr - remainder\n");
-        //            operation = char.Parse(Console.ReadLine());
-        //            if (operation == 'a' || operation == 's' || operation == 'd' || operation == 'm' || operation == 'r' ) {
-        //                validEntry = true;
-        //            } else {
-        //                printErrorMessage();
-        //            }
-        //        } catch (Exception ex) {
-        //            printErrorMessage();
-        //        }
-        //    } while (!validEntry);
-        //    return operation;
-        //}
-
-        //static void printErrorMessage() {
-        //    Console.WriteLine("Error: this character seems not to be what we expect. Please enter it again.");
-        //}
-
-        //static double addition(double a, double b) {
-        //    return a + b;
-        //}
-
-        //static double substraction(double a, double b) {
-        //    return a - b;
-        //}
-
-        //static double division(double a, double b) {
-        //    return a / b;
-        //}
-
-        //static double multiplication(double a, double b) {
-        //    return a * b;
-        //}
-
-        //static double remainder(double a, double b) {
-        //    return a % b;
-        //}
-
-        //static void printGoodByeMessage() {
-        //    Console.WriteLine("Thanks for using the calculator app. Press 'ENTER' to close.");
-        //    Console.ReadLine();
-        //}
-
-        //static void printWelcomeMessage() {
-        //    Console.WriteLine("Welcome to the Calulator APP.");
-        //    Console.WriteLine("Instructions: this calculator app handles the four basic operations for two numbers.\n" +
-        //        "First, enter a number. Then, enter the operation. Last, enter the second number.");
-        //    Console.WriteLine("\n\n***************************************************\n\n");
-        //}
-
-
     }
 }
