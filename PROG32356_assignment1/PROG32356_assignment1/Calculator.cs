@@ -33,10 +33,12 @@ namespace PROG32356_assignment1
                 Console.Write("Enter one of the following operators (+, -, *, /, %): ");
                 string operation = getOperator();
 
-                double result = performOperation(operation, number1, number2);
-
-                Console.WriteLine($"\n{number1} {operation} {number2} = {result}\n");
-
+                if (operation.Equals("/") && (number1 == 0 || number2 == 0) ) {
+                    Console.WriteLine("Error: Division by zero cannot be performed.");
+                } else {
+                    double result = performOperation(operation, number1, number2);
+                    Console.WriteLine($"\n{number1} {operation} {number2} = {result}\n");
+                }
                 Console.WriteLine("Enter \"y\" to make another operation or any to exit.");
             } while (Console.ReadLine() == "y");
         }
